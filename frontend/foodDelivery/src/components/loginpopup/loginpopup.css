@@ -1,0 +1,75 @@
+.loginpopup{
+
+    border: solid 2px black;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color:#00000090;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginpopup-container{
+    width: 300px;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    padding: 1rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+.loginpopup-container .loginpopup-title {
+display: flex;
+align-items: center;
+justify-content: space-between;
+i{
+    font-size: 2rem;
+}
+h1{
+    font-size: 2.5rem;
+}
+}
+.loginpopup-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.loginpopup-input input{
+    padding: 0.5rem 1rem;
+    outline: none;
+    border-radius: 0.5rem;
+    border: solid 1px black;
+}
+.loginpopup button{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 68, 0, 0.841);
+    color: white;
+    border: none;
+}
+.loginpopup button:hover{
+    background-color: rgba(255, 68, 0, 0.719);
+}
+.loginpopup-condition {
+    display: flex;
+    gap: 1rem;
+    margin-top: -1rem;
+    p{
+        text-align: left;
+        font-size: 1.2rem;
+    }
+}
+.loginpopup p{
+    margin-top: -1rem;
+    font-size: 1.2rem;
+span{
+    cursor:pointer;
+    color: orangered;
+}
+}
+.fa-xmark:hover{
+transform: scale(1.2);
+}

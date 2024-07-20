@@ -1,0 +1,129 @@
+.add-to-cart {
+  margin: 7rem 0rem;
+}
+.cart-item {
+  padding: 1rem;
+}
+.add-to-cart .cart-title {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  p {
+    font-size: 1.6rem;
+  }
+}
+.add-to-card-item {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 1rem 0rem;
+}
+.add-to-card-item img {
+  border-radius: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+}
+.addItem {
+  font-size: 1.8rem;
+}
+.addItem i:hover {
+  transform: scale(1.2);
+}
+.card-bottom {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20rem;
+  margin: 5rem 0rem;
+}
+.card-bottom h1 {
+  margin: 1rem 0rem;
+}
+.card-bottom-left p {
+  font-size: 1.4rem;
+}
+
+.card-bottom-left .subTotal {
+  margin: 0.5rem 0rem;
+  display: flex;
+  justify-content: space-between;
+}
+.card-bottom-left button{
+    margin: 1rem 0rem;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 68, 0, 0.816);
+    border: none;
+}
+.card-bottom button:hover{
+    background-color: rgba(255, 68, 0, 0.767);
+}
+.card-bottom-right p{
+    margin: 1rem 0rem;
+    font-size: 1.5rem;
+  }
+
+.card-bottom-right div{
+    margin-top: 1rem;
+    width: 80%;
+}
+.card-bottom-right input{
+    background-color: rgb(218, 218, 218);
+    outline: none;
+    padding: 1rem 2rem;
+    border: none;
+   border-top-left-radius: 0.5rem;
+   border-bottom-left-radius: 0.5rem;
+
+}
+.card-bottom-right button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+}
+
+@media (max-width:700px) {
+    .add-to-card-item img {
+        border-radius: 0.5rem;
+        width: 3rem;
+        height: 3rem;
+      }
+    .card-bottom {
+        gap: 5rem;
+    }
+    .card-bottom-right div{
+        width: 100%;
+        input{
+            padding: 0.5rem 1rem;
+        }
+        button{
+            padding: 0.5rem 1rem;
+        }
+    }
+}
+
+@media (max-width:252px) {
+    .add-to-cart {
+        width: 180vw;
+    }
+    .card-bottom{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .card-bottom-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+            width: 69%;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.list{
+ padding: 1rem 2rem;
+    width: 80%;
+    
+}
+.list h2{
+    margin: 1rem 0px;
+    font-size: 2.4rem ;
+
+}
+.list-table p{
+    text-align: center;
+   margin: auto;
+    font-size: 1.6rem;
+     padding: 1rem;
+
+}
+.list-table{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5 ,1fr);
+    gap: 4rem;
+}
+
+.list-table img{
+   width: 100%;
+}
+.cursor:hover{
+  cursor:default;
+}

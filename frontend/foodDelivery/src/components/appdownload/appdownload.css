@@ -1,0 +1,41 @@
+.app-download {
+  margin: 5rem auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.app-download h1{
+    font-size: 3rem;
+}
+.app-download img {
+  width: 3rem;
+}
+
+.app-info {
+  color: white;
+  display: flex;
+  gap: 2rem;
+}
+
+.getapp {
+  cursor: default;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  gap: 1rem;
+}
+.getapp:hover{
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+@media (max-width:252px) {
+  .app-download {
+    width: 180vw;
+    text-align: center;
+    
+  }
+}

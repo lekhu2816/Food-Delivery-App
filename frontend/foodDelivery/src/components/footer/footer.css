@@ -1,0 +1,95 @@
+.footer {
+  color: white;
+  padding: 2rem 0rem;
+  background-color: #323232;
+}
+.footer-content {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 5rem;
+  padding: 0rem 5rem;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer-left img {
+  width: 4rem;
+  height: 4rem;
+}
+.footer-left p {
+  font-size: 1.4rem;
+}
+.footer-left .socialMedia-icons i {
+  margin: 0px 1rem;
+  font-size: 2.2rem;
+}
+
+.socialMedia-icons i:nth-child(1) {
+  color: #3b5998;
+}
+.footer-content i:nth-child(2) {
+  color: rgb(255, 255, 255);
+}
+.footer-content i:nth-child(3) {
+  color: #0077b5;
+}
+.footer-content i:nth-child(4) {
+  color: #e1306c;
+}
+.footer-content i:nth-child(5) {
+  color: #25d366;
+}
+.socialMedia-icons i:hover {
+  transform: scale(1.1);
+}
+
+.footer-middle h1 {
+  font-size: 2rem;
+}
+.footer-middle ul {
+  margin-top: 1rem;
+  list-style: none;
+  font-size: 1.4rem;
+
+  li {
+    margin: 0.5rem;
+  }
+}
+
+.footer-right h1 {
+  margin-bottom:1rem ;
+  font-size: 2rem;
+}
+.footer-right p{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
+.footer-right .fa-phone {
+    color: green;
+    margin-right:10px;
+}
+.footer-right .fa-envelope {
+    color: rgb(73, 94, 255);
+    margin-right:10px;
+}
+.footer hr{
+  margin: 2rem 5rem;
+}
+.footer .copyright{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media (max-width:700px) {
+  .footer{
+    width: 100%;
+  }
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,61 @@
+.user-order{
+   
+    margin: 7rem 0rem;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+.user-order .user-order-header {
+    background-color: orangered;
+    color: white;
+    padding: 1rem;
+}
+.user-order-title {
+    border: solid 1px black;
+    padding: 1rem;
+}
+.user-order-list{
+    padding: 1rem;
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 2rem;
+    align-items: center;
+
+}
+.user-order-list img{
+    width: 5rem;
+    margin: auto;
+}
+.user-order-list p{
+    font-size: 1.5rem;
+   
+}
+.track-order button{
+    display: block;
+    margin: auto;
+    padding:  0.6rem 1rem;
+    border: none;
+    background-color: rgba(255, 68, 0, 0.398);
+    color: rgb(0, 0, 0);
+    border-radius: 2px;
+    margin: auto;
+}
+.user-order-status{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.user-order-status div{
+    
+    width: 5px;
+    height: 5px;
+    /* background-color: red; */
+    border-radius: 50%;
+}
+.red-bg{
+    background-color: red;
+}
+.green-bg{
+    background-color: green;
+}

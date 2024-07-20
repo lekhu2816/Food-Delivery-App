@@ -1,0 +1,135 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    width: 100%; 
+     top: 0px;
+    right: 0px;
+    z-index: 1;
+    padding:0.5rem 5rem;
+}
+.navbar img{
+    width: 5rem;
+}
+.navbar ul{
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 1.6rem;
+}
+.nav-right{
+   display: flex; 
+   align-items: center;
+   gap: 2rem;
+}
+.nav-right .search{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    i{
+    font-size: 2rem;
+    }
+}
+.cart{
+    position: relative;
+    i{
+        position: relative;
+        font-size: 2rem;
+    }
+    div{
+        position: absolute;
+        top: -0.7rem;
+        right:-0.5rem ;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: red;
+    }
+}
+.nav-right .btn{
+    font-size: 1.6rem;
+    padding:0.5rem 1rem;
+    border-radius: 50px;
+    border: solid 1.5px rgb(12, 0, 92);
+    background-color: white;
+    color: rgb(0, 2, 116);
+}
+.navbar .active {
+    position: relative;
+    bottom: 2px;
+    font-size: 1.8rem;
+    border-bottom: rgb(42, 48, 67) 2px solid;
+}
+.nav-right .selectInput{
+    transition: 0.1s;
+    display:inline;
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid black;
+    outline: none;
+    border-radius: 1rem;
+
+}
+.nav-right .notSelectInput{
+    display: none;
+}
+.btn:hover{
+    background-color: rgb(0, 30, 83);
+    color: white;
+}
+.nav-profile{
+ position: relative;
+ img{
+ width: 25px;
+}
+}
+.nav-profile .nav-profile-dropdown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(249, 249, 249);
+    right: 0px;
+   
+    
+    
+}
+.nav-profile:hover .nav-profile-dropdown{
+display: flex;
+    flex-direction: column;
+    padding: 10px;
+    list-style: none;
+li{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+}
+
+@media (max-width:700px) {
+    .navbar{
+        padding:  0.5rem;
+        img{
+            width: 3rem;
+        }
+        ul{
+            gap: 1.5rem;
+        }
+    }
+    
+}
+@media (max-width:500px) {
+    
+    .navbar ul{
+        display: none;
+        
+    }
+}
+@media (max-width:252px) {
+    
+    .navbar ul{
+        display: none;
+        
+    }
+}

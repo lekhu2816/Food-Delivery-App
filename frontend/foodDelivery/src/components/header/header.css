@@ -1,0 +1,75 @@
+.header{
+    height: 35vw;
+    margin: 2rem 0px;
+    background-size: cover;
+    background-image: url('https://images.pexels.com/photos/1603901/pexels-photo-1603901.jpeg');
+    border-radius: 5px;
+    position: relative;
+}
+.header-content{
+position: absolute;
+top: 25%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 2rem;
+max-width: 45%;
+padding: 1rem;
+animation: fadeIn 3s;
+}
+.header-content h1{
+    font-size: 4rem;
+    color: white;
+
+}
+.header-content p{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 200;
+}
+.header-content button{
+   padding:  1rem 1.6rem;
+   border-radius: 50px;
+   background-color: transparent;
+   color: rgb(255, 255, 255);
+   border: 1.5px solid rgb(255, 255, 255);
+}
+
+.header-content button:hover{
+    border:1.5px solid rgb(255, 0, 0) ;
+    color: rgb(255, 0, 0);
+}
+@keyframes fadeIn {
+    0%{
+    opacity: 0;
+    }
+    100%{
+    opacity: 1;
+    }
+}
+
+@media (max-width:700px) {
+    .header{
+        margin-top: 1rem;
+        height: 80vw;
+    }
+}
+@media (max-width:500px) {
+    .header{
+        height: 120vw;
+    }
+    .header-content{
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.4rem;
+        }
+    }
+}
+@media (max-width:252px) {
+    .header{
+        height: 250vw;
+        width: 180vw;
+    }
+}

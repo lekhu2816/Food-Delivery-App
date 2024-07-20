@@ -1,0 +1,127 @@
+.payment {
+  margin: 8rem 0rem;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  gap: 5rem;
+}
+input[type="radio"] {
+    margin-top: 0.1rem;
+  width: 20px;
+  height: 20px;
+}
+.display-flex {
+  display: flex;
+  gap: 2rem;
+  
+}
+
+.subheading{
+    font-size: 1.6rem;
+    color: rgb(115, 115, 115);
+}
+.title{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+
+.payment-left {
+  width: 70%;
+
+  box-shadow: 0px 0px 3px 0.5px black;
+}
+
+
+.payment .heading {
+  background-color: rgba(255, 68, 0, 0.897);
+  color: white;
+  padding: 1rem;
+}
+.payment-options .upi {
+    padding: 2rem 1rem;
+  img {
+    width: 2rem;
+  }
+}
+.upi-payment-mode{
+    margin: 1rem 0rem;
+    input{
+        margin: 1rem;
+        padding: 1rem 1.9rem;
+        font-size: 1.6rem;
+        border: 1px solid black;
+        outline: none;
+    }
+}
+.card{
+    padding: 2rem 1rem;
+}
+.card-details{
+    /* background-color: white; */
+    padding: 1rem;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+}
+#cardNumber{
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1rem 1.6rem;
+}
+#expiryDate{
+    width: 60%; 
+    font-size: 1.6rem;
+    padding: 1rem 1.6rem;
+}
+#cvv{
+    width: 40%; 
+    font-size: 1.6rem;
+    padding: 1rem 1.6rem; 
+}
+.card-middle{
+ display: flex;
+    gap: 1rem;
+}
+.cash{
+    padding: 2rem 1rem;
+}
+.pay{
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: white;
+    background-color: rgba(255, 68, 0, 0.897);
+    border: none;
+    border-radius: 5px;
+}
+.pay:hover{
+    background-color: rgb(255, 68, 0);
+}
+.cod-mode{
+    margin: 1rem;
+}
+.displayNone{
+    display: none;
+}
+.setBackground{
+    background-color: rgba(226, 174, 140, 0.087);
+}
+.payment-right {
+    
+    padding: 1rem;
+    text-align: center;
+    width: 30%;
+    height: 20rem;
+    box-shadow: 0px 0px 3px 0.5px black;
+  }
+  .price-summary{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    p{
+        font-size: 1.6rem;
+    }
+  }

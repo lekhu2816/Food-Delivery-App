@@ -1,0 +1,78 @@
+.placeorder{
+    margin: 7rem 0rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1rem;
+    gap: 10rem;
+
+}
+.placeorder-left{
+    width: 60%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    h1{
+        margin: 1rem 0rem;
+    }
+}
+.placeorder-left input{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline:none ;
+    border-radius: 0.2rem;
+    border: 1px solid black;
+}
+.placeorder-left .multi-fields{
+    display: flex;
+    gap: 1rem;
+}
+.placeorder-right{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    h1{
+        margin: 1rem 0rem;
+    }
+
+}
+.placeorder-right .subTotal{
+    display: flex;
+    justify-content: space-between;
+   p{
+    font-size: 1.4rem;
+   }
+    
+}
+.placeorder-right button{
+  margin: 0.5rem auto;
+ padding: 1rem 4rem;
+ color: white;
+ background-color: rgba(255, 68, 0, 0.897);
+ border: none;
+ border-radius: 0.5rem;
+}
+.placeorder-right button:hover{
+    background-color: rgba(255, 68, 0, 0.77);  
+}
+
+@media (max-width:700px) {
+    .placeorder{
+        gap: 0rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .placeorder-left{
+        width: 80%;
+    }
+
+    .placeorder-left .multi-fields{
+        display: flex;
+        flex-direction: column;
+    }
+    .placeorder-right{
+     width: 100%;
+    }
+}
